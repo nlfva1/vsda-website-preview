@@ -47,24 +47,24 @@
 
   <section>
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2 data-i18n="core_h2">De kern van het probleem</h2>
         <p data-i18n="core_p">Organisaties, zeker in de publieke sector, zijn massaal afhankelijk geworden van een klein aantal Amerikaanse clouddiensten: Microsoft Azure, AWS, Google Cloud. Die afhankelijkheid is zelden bewust gekozen. Ze is er insluipend gekomen, opdracht voor opdracht.</p>
       </div>
-      <div class="grid grid-2">
-        <div class="card">
+      <div class="grid grid-2" data-reveal-group>
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="risk1_h">Geopolitieke risico's</h3>
           <p data-i18n="risk1_p">Spanningen tussen landen kunnen toegang tot diensten beperken, met directe gevolgen voor kritieke processen.</p>
         </div>
-        <div class="card">
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="risk2_h">Uitval zonder terugvalplan</h3>
           <p data-i18n="risk2_p">Als een platform uitvalt, staat de bedrijfsvoering stil. Denk aan de wereldwijde CrowdStrike-storing van juni 2024.</p>
         </div>
-        <div class="card">
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="risk3_h">Data buiten Europese jurisdictie</h3>
           <p data-i18n="risk3_p">Gegevens staan bij leveranciers die onder buitenlands recht vallen, wat spanning oplevert met Europese wet- en regelgeving.</p>
         </div>
-        <div class="card">
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="risk4_h">Geen plan B</h3>
           <p data-i18n="risk4_p">Veel organisaties zijn "analoog onbekwaam" geworden: er is geen werkend alternatief als de techniek uitvalt.</p>
         </div>
@@ -74,7 +74,7 @@
 
   <section class="section-alt">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2 data-i18n="nl_h2">De Nederlandse situatie</h2>
         <p data-i18n="nl_p1">Onderzoeker Bert Hubert heeft in kaart gebracht welke sectoren volledig afhankelijk zijn van Amerikaanse clouddiensten: gemeenten, RDW, UWV en veiligheidsregio's in de overheid; ziekenhuizen en huisartsenposten in de zorg (onder andere via Chipsoft HiX); kranten, omroepen, banken en betalingssystemen in media en financi&euml;n; en openbaar vervoer en spoor, die actief migreren naar Azure en AWS.</p>
         <p data-i18n="nl_p2">De conclusie van dat onderzoek is helder: er is geen serieus plan B. De digitale infrastructuur van Nederland is voor grote delen gebouwd op Amerikaanse fundamenten.</p>
@@ -85,19 +85,19 @@
 
   <section>
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2 data-i18n="do_h2">Wat ik hierin doe</h2>
       </div>
-      <div class="grid grid-3">
-        <div class="card">
+      <div class="grid grid-3" data-reveal-group>
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="do1_h">1. Risicokaart</h3>
           <p data-i18n="do1_p">Welke processen vallen stil als de toegang tot een leverancier wegvalt? Ik breng het in kaart, concreet en zonder paniekvoetbal.</p>
         </div>
-        <div class="card">
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="do2_h">2. Alternatieven</h3>
           <p data-i18n="do2_p">Zijn er Europese of open-source alternatieven die passen bij de schaal en context van jouw organisatie? Ik zoek ze uit en weeg ze eerlijk af.</p>
         </div>
-        <div class="card">
+        <div class="card reveal reveal-zoom">
           <h3 data-i18n="do3_h">3. Strategie</h3>
           <p data-i18n="do3_p">Hoe bouw je stap voor stap een minder kwetsbare situatie op, zonder alles tegelijk overhoop te gooien? Realistisch en behapbaar.</p>
         </div>
@@ -107,17 +107,17 @@
 
   <section class="section-alt">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2 data-i18n="relevant_h2">Relevant voor</h2>
         <p data-i18n="relevant_p">Overheid en publieke sector &middot; financi&euml;le dienstverlening (banken, pensioenfondsen, verzekeraars) &middot; energie en nutsbedrijven &middot; zorg &middot; elke organisatie met kritieke bedrijfsprocessen die continu&iuml;teit vereisen.</p>
       </div>
-      <p data-i18n="related" data-i18n-html="true">Deze analyse raakt ook aan <a href="diensten.html">Business Continuity Planning</a> (wat als een provider wegvalt?) en <a href="diensten.html">Cloud &amp; Solution Architecture</a> (hoe ontwerp je een minder afhankelijke architectuur?).</p>
+      <p class="reveal" data-i18n="related" data-i18n-html="true">Deze analyse raakt ook aan <a href="diensten.html">Business Continuity Planning</a> (wat als een provider wegvalt?) en <a href="diensten.html">Cloud &amp; Solution Architecture</a> (hoe ontwerp je een minder afhankelijke architectuur?).</p>
     </div>
   </section>
 
   <section>
     <div class="container">
-      <div class="cta-band">
+      <div class="cta-band reveal">
         <div>
           <h2 data-i18n="cta_h2">Wil je weten hoe afhankelijk jouw organisatie is?</h2>
           <p data-i18n="cta_p">Preventie is beter dan cure. Een kennismakingsgesprek is vrijblijvend.</p>
@@ -259,6 +259,7 @@ window.VSDA_TRANSLATIONS = {
   }
 };
 </script>
+<script src="assets/js/reveal.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script>initI18n(window.VSDA_TRANSLATIONS, 'vsdaLang');</script>
 </body>
