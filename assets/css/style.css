@@ -153,7 +153,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   text-decoration: none;
 }
-.brand img { height: 34px; width: auto; }
+.brand img { height: 46px; width: auto; }
 
 .nav-links {
   display: flex;
@@ -174,13 +174,6 @@ img { max-width: 100%; display: block; }
 .nav-links a:hover, .nav-links a[aria-current="page"] {
   color: var(--color-primary);
   border-bottom-color: var(--color-accent);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .nav-links a:hover,
-  :root:not([data-theme="light"]) .nav-links a[aria-current="page"] {
-    color: var(--color-foreground);
-  }
 }
 
 .nav-actions { display: flex; align-items: center; gap: var(--space-3); }
@@ -206,6 +199,40 @@ img { max-width: 100%; display: block; }
   background-size: 14px;
 }
 .lang-switch:hover { border-color: var(--color-accent); }
+
+/* De header blijft altijd licht, ook in dark mode: het logo-beeld zelf heeft
+   donkere tekst die alleen op een lichte achtergrond leesbaar is. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .site-header {
+    background: #FFFFFF;
+    border-bottom-color: #E2E8F0;
+  }
+  :root:not([data-theme="light"]) .nav-links a { color: #334155; }
+  :root:not([data-theme="light"]) .nav-links a:hover,
+  :root:not([data-theme="light"]) .nav-links a[aria-current="page"] {
+    color: #0F172A;
+  }
+  :root:not([data-theme="light"]) .lang-switch {
+    color: #0F172A;
+    background: #FFFFFF;
+    border-color: #E2E8F0;
+  }
+  :root:not([data-theme="light"]) .nav-toggle {
+    background: #FFFFFF;
+    border-color: #E2E8F0;
+  }
+  :root:not([data-theme="light"]) .nav-toggle svg { stroke: #0F172A; }
+  :root:not([data-theme="light"]) .nav-wrap.open .nav-links {
+    background: #FFFFFF;
+    border-bottom-color: #E2E8F0;
+  }
+}
+
+.nav-actions .btn-primary {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.85rem;
+  min-height: 38px;
+}
 
 .nav-toggle {
   display: none;
@@ -247,9 +274,14 @@ img { max-width: 100%; display: block; }
   color: var(--color-primary);
 }
 .btn-outline:hover { border-color: var(--color-accent); color: var(--color-accent); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn-outline { color: var(--color-foreground); }
+}
 .btn-on-dark {
-  background: var(--color-on-accent);
-  color: var(--color-primary);
+  /* Altijd wit-op-donker, ongeacht licht/donker modus: deze knop leeft alleen
+     binnen de altijd-donkere hero/cta-band, niet op de gewone paginatint. */
+  background: #FFFFFF;
+  color: #0F172A;
 }
 .btn-on-dark:hover { background: #DCEAFE; }
 .btn-outline-on-dark {
@@ -267,7 +299,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 .hero .container {
-  padding-top: var(--space-7);
+  padding-top: var(--space-5);
   padding-bottom: var(--space-7);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -277,7 +309,7 @@ img { max-width: 100%; display: block; }
   z-index: 1;
 }
 .hero-page {
-  padding-top: var(--space-6);
+  padding-top: var(--space-4);
   padding-bottom: var(--space-6);
 }
 .hero-page .container { grid-template-columns: 1fr; text-align: left; }
@@ -474,6 +506,9 @@ section { padding: var(--space-7) 0; }
 .contact-row .icon svg { width: 20px; height: 20px; stroke: var(--color-accent); }
 .contact-row a { color: var(--color-primary); font-weight: 600; text-decoration: none; }
 .contact-row a:hover { color: var(--color-accent); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .contact-row a { color: var(--color-foreground); }
+}
 .contact-row .label { display: block; font-size: 0.8rem; color: var(--color-muted-foreground); text-transform: uppercase; letter-spacing: 0.04em; }
 
 /* Footer */
