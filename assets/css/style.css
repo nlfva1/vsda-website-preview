@@ -421,6 +421,7 @@ section { padding: var(--space-7) 0; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   width: 100%;
+  height: auto;
 }
 .bio-card {
   background: var(--color-card);
@@ -599,6 +600,7 @@ section { padding: var(--space-7) 0; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   width: 100%;
+  height: auto;
 }
 .media-figure { margin: 0; }
 .banner-figure {
@@ -607,7 +609,7 @@ section { padding: var(--space-7) 0; }
   overflow: hidden;
   box-shadow: var(--shadow-md);
 }
-.banner-figure img { width: 100%; display: block; }
+.banner-figure img { width: 100%; height: auto; display: block; }
 
 @media (max-width: 960px) {
   .media-layout { grid-template-columns: 1fr; }
