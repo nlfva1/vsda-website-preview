@@ -337,7 +337,7 @@ img { max-width: 100%; display: block; }
   margin-top: var(--space-3);
 }
 .hero-art { position: relative; }
-.hero-art svg { width: 100%; height: auto; max-width: 480px; }
+.hero-art svg { width: 100%; height: auto; max-width: 380px; }
 
 /* Sections */
 section { padding: var(--space-7) 0; }
