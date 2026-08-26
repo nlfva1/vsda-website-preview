@@ -293,6 +293,7 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
+  padding: 0;
   background: linear-gradient(160deg, var(--color-primary) 0%, #16213D 55%, #0B3352 100%);
   color: #fff;
   position: relative;
