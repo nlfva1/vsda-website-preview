@@ -50,7 +50,10 @@
       <div class="contact-grid">
 
         <div class="contact-card reveal reveal-left">
+          <span class="eyebrow on-light" data-i18n="details_eyebrow">Bereik me</span>
           <h2 data-i18n="details_h2">Contactgegevens</h2>
+          <p class="contact-intro" data-i18n="details_intro">Ik reageer snel: geen accountmanagers of tussenlagen, je mailt of belt direct met de architect die het werk doet.</p>
+          <hr class="contact-divider">
           <div class="contact-row">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
             <div>
@@ -81,12 +84,29 @@
           </div>
         </div>
 
-        <div class="contact-card reveal reveal-right">
-          <h2 data-i18n="expect_h2">Wat kun je verwachten?</h2>
-          <p data-i18n="expect_p1">Ik reageer snel: geen accountmanagers of tussenlagen, je mailt of belt direct met de architect die het werk doet.</p>
-          <p data-i18n="expect_p2">In het eerste gesprek kijken we samen of er een klik is en wat er speelt in je organisatie. Geen verplichtingen, geen verkooppraatje.</p>
-          <p class="pullquote" data-i18n="expect_quote">"Neem vrijblijvend contact op voor een kennismakingsgesprek."</p>
-          <p><a href="mailto:info@vsda-solutions.nl" class="btn btn-primary" data-i18n="expect_cta">Stuur een e-mail</a></p>
+        <div class="contact-card-dark reveal reveal-right">
+          <span class="eyebrow" data-i18n="form_eyebrow">Stuur een bericht</span>
+          <h2 data-i18n="form_h2">Vertel me wat er speelt</h2>
+          <p class="form-note" data-i18n="form_note">Ik neem binnen 1 werkdag contact op.</p>
+          <form onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'en' ? 'This form is not active yet. Please email me directly at info@vsda-solutions.nl.' : 'Dit formulier is nog niet actief. Mail me rechtstreeks via info@vsda-solutions.nl.');">
+            <div class="form-field">
+              <label for="cf-name" data-i18n="form_name">Naam</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-email" data-i18n="form_email">E-mail</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="cf-phone" data-i18n="form_phone">Telefoon (optioneel)</label>
+              <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label for="cf-message" data-i18n="form_message">Bericht</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn form-submit" data-i18n="form_submit">Verstuur bericht</button>
+          </form>
         </div>
 
       </div>
@@ -151,17 +171,22 @@ window.VSDA_TRANSLATIONS = {
     "eyebrow": "Contact",
     "h1": "Laten we kennismaken.",
     "lead": "Vrijblijvend, zonder verkooppraatje. Gewoon een goed gesprek over wat er bij jouw organisatie speelt.",
+    "details_eyebrow": "Bereik me",
     "details_h2": "Contactgegevens",
+    "details_intro": "Ik reageer snel: geen accountmanagers of tussenlagen, je mailt of belt direct met de architect die het werk doet.",
     "email_label": "E-mail",
     "phone_label": "Telefoon",
     "based_label": "Vestiging",
     "based_value": "Spijkenisse",
     "kvk_label": "KVK",
-    "expect_h2": "Wat kun je verwachten?",
-    "expect_p1": "Ik reageer snel: geen accountmanagers of tussenlagen, je mailt of belt direct met de architect die het werk doet.",
-    "expect_p2": "In het eerste gesprek kijken we samen of er een klik is en wat er speelt in je organisatie. Geen verplichtingen, geen verkooppraatje.",
-    "expect_quote": "“Neem vrijblijvend contact op voor een kennismakingsgesprek.”",
-    "expect_cta": "Stuur een e-mail",
+    "form_eyebrow": "Stuur een bericht",
+    "form_h2": "Vertel me wat er speelt",
+    "form_note": "Ik neem binnen 1 werkdag contact op.",
+    "form_name": "Naam",
+    "form_email": "E-mail",
+    "form_phone": "Telefoon (optioneel)",
+    "form_message": "Bericht",
+    "form_submit": "Verstuur bericht",
     "footer_tagline": "Freelance IT-architectuur die aansluit bij je bedrijfsstrategie. Pragmatisch, menselijk, gericht op wat werkt in de praktijk.",
     "footer_nav_heading": "Navigatie",
     "footer_legal_heading": "Juridisch",
@@ -185,17 +210,22 @@ window.VSDA_TRANSLATIONS = {
     "eyebrow": "Contact",
     "h1": "Let's talk.",
     "lead": "No obligation, no sales pitch. Just a good conversation about what's going on in your organization.",
+    "details_eyebrow": "Reach out",
     "details_h2": "Contact details",
+    "details_intro": "I respond quickly: no account managers or middlemen, you email or call directly with the architect doing the work.",
     "email_label": "Email",
     "phone_label": "Phone",
     "based_label": "Based in",
     "based_value": "Spijkenisse, The Netherlands",
     "kvk_label": "Chamber of Commerce",
-    "expect_h2": "What to expect",
-    "expect_p1": "I respond quickly: no account managers or middlemen, you email or call directly with the architect doing the work.",
-    "expect_p2": "In the first conversation, we look together at whether there's a fit and what's going on in your organization. No obligations, no sales pitch.",
-    "expect_quote": "“Get in touch, free of obligation, for an introductory conversation.”",
-    "expect_cta": "Send an email",
+    "form_eyebrow": "Send a message",
+    "form_h2": "Tell me what's going on",
+    "form_note": "I'll get back to you within 1 business day.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_phone": "Phone (optional)",
+    "form_message": "Message",
+    "form_submit": "Send message",
     "footer_tagline": "Freelance IT architecture that follows your business strategy. Pragmatic, human, focused on what actually works.",
     "footer_nav_heading": "Navigation",
     "footer_legal_heading": "Legal",

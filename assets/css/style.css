@@ -638,6 +638,58 @@ section { padding: var(--space-7) 0; }
 }
 .contact-row .label { display: block; font-size: 0.8rem; color: var(--color-muted-foreground); text-transform: uppercase; letter-spacing: 0.04em; }
 
+.contact-intro { color: var(--color-secondary); margin-bottom: var(--space-3); }
+.contact-divider { border: none; border-top: 1px solid var(--color-border); margin: 0 0 var(--space-3); }
+
+/* Contactformulier: donkere kaart naast de lichte contactgegevens-kaart */
+.contact-card-dark {
+  background: linear-gradient(160deg, var(--color-primary) 0%, #16213D 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.contact-card-dark h2 { color: #fff; }
+.contact-card-dark .form-note {
+  color: #93A3BE;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-3);
+}
+.form-field { margin-bottom: var(--space-2); }
+.form-field label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #93A3BE;
+  margin-bottom: 0.4rem;
+}
+.form-field input, .form-field textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.7rem 0.85rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+.form-field input:focus, .form-field textarea:focus {
+  outline: 3px solid var(--color-copper);
+  outline-offset: 1px;
+}
+.form-field textarea { resize: vertical; min-height: 110px; }
+.form-submit {
+  width: 100%;
+  background: var(--color-copper);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.form-submit:hover { background: #9C5527; }
+
 /* Footer */
 .site-footer {
   background: var(--color-primary);
