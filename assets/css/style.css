@@ -296,7 +296,10 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
-  padding: 0;
+  /* Alle verticale ruimte staat HIER, op het section-niveau. Nooit ook op
+     .hero .container zetten: dat stapelde eerder onbedoeld op (zie PROJECT.md). */
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-7);
   background: linear-gradient(160deg, var(--color-primary) 0%, #16213D 55%, #0B3352 100%);
   color: #fff;
   position: relative;
@@ -315,8 +318,6 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
 }
 .hero .container {
-  padding-top: var(--space-5);
-  padding-bottom: var(--space-7);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: var(--space-5);
@@ -325,8 +326,8 @@ img { max-width: 100%; display: block; }
   z-index: 1;
 }
 .hero-page {
-  padding-top: var(--space-4);
-  padding-bottom: var(--space-6);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-4);
 }
 .hero-page .container { grid-template-columns: 1fr; text-align: left; }
 .hero h1 { color: #fff; }
