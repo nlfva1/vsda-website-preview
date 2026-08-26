@@ -39,7 +39,7 @@
     <div class="container">
       <div>
         <span class="eyebrow" data-i18n="hero_eyebrow">IT-architectuur &middot; strategie &middot; continu&iuml;teit</span>
-        <h1 data-i18n="hero_h1">IT-architectuur die je strategie volgt. Niet andersom.</h1>
+        <h1 data-i18n="hero_h1" data-i18n-html="true">IT-architectuur die je strategie volgt. <span class="accent-copper">Niet andersom.</span></h1>
         <p class="lead" data-i18n="hero_lead">Je hebt geen junior nodig die alles nog moet leren. Je hebt iemand nodig die de situatie snel doorgrondt en direct waarde toevoegt. Dat is precies waar ik voor kom.</p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-on-dark" data-i18n="hero_cta_primary">Kennismaken</a>
@@ -68,6 +68,13 @@
           <line x1="216" y1="195" x2="264" y2="195" stroke="#E0F2FE" stroke-width="1.5" opacity="0.8"/>
           <line x1="216" y1="215" x2="264" y2="215" stroke="#E0F2FE" stroke-width="1.5" opacity="0.8"/>
           <line x1="216" y1="235" x2="264" y2="235" stroke="#E0F2FE" stroke-width="1.5" opacity="0.8"/>
+          <g stroke="#B5652D" stroke-width="1.5" opacity="0.85">
+            <path d="M -6 34 L -6 14 L 14 14" fill="none"/>
+            <path d="M 486 34 L 486 14 L 466 14" fill="none"/>
+            <path d="M -6 386 L -6 406 L 14 406" fill="none"/>
+            <path d="M 486 386 L 486 406 L 466 406" fill="none"/>
+          </g>
+          <text x="-6" y="424" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1" fill="#7DD3FC" opacity="0.75">FIG.01 &middot; STRATEGIE NAAR OPLOSSING</text>
         </svg>
       </div>
     </div>
@@ -89,6 +96,7 @@
       <div class="media-layout">
         <div class="media-text">
           <div class="section-head reveal">
+            <span class="section-index" aria-hidden="true">01</span>
             <h2 data-i18n="recognize_h2">Herkenbaar?</h2>
             <p data-i18n="recognize_p">Je organisatie heeft al IT-volwassenheid, maar loopt tegen grenzen aan. Schaalbaarheid. Governance. Strategische alignment tussen business en IT. Een groot consultancybureau stuurt een team dat eerst moet inwerken. Daar heb je de tijd niet voor.</p>
           </div>
@@ -106,46 +114,47 @@
   <section class="section-alt">
     <div class="container">
       <div class="section-head reveal">
+        <span class="section-index" aria-hidden="true">02</span>
         <h2 data-i18n="services_h2">Wat ik voor je doe</h2>
         <p data-i18n="services_lead">Geen vaste pakketten. De opdracht bepaalt de aanpak, van eerste strategie tot concrete oplossing.</p>
       </div>
-      <div class="grid grid-3" data-reveal-group>
+      <div class="bento" data-reveal-group>
 
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech bento-feature reveal reveal-zoom">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 21h20L12 2z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg></div>
+          <h3 data-i18n="svc6_h">Big-tech risicoanalyse</h3>
+          <p data-i18n="svc6_p">Hoe afhankelijk ben je van techbedrijven uit geopolitiek gevoelige regio's? Ik breng het risico in kaart en adviseer over Europese alternatieven.</p>
+          <a href="big-tech-risicoanalyse.html" class="card-link" data-i18n="svc6_link">Meer over deze dienst &rarr;</a>
+        </div>
+
+        <div class="card card-tech reveal reveal-zoom">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 12l9 4 9-4"/><path d="M3 17l9 4 9-4"/></svg></div>
           <h3 data-i18n="svc1_h">Solution architecture</h3>
           <p data-i18n="svc1_p">Cloud, data en integratieoplossingen. Van strategie tot ontwerp: bedrijfsbehoeften vertaald naar schaalbare, toekomstbestendige architectuur.</p>
         </div>
 
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="12,7 14,12 12,17 10,12"/></svg></div>
           <h3 data-i18n="svc2_h">Data &amp; IT-strategie</h3>
           <p data-i18n="svc2_p">Strategisch advies over de richting van je IT-landschap, afgestemd op je bedrijfsdoelen.</p>
         </div>
 
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
           <h3 data-i18n="svc3_h">Enterprise &amp; domeinarchitectuur</h3>
           <p data-i18n="svc3_p">Brede architectuurkaders voor grote organisaties met complexe IT-omgevingen.</p>
         </div>
 
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
           <h3 data-i18n="svc4_h">Consultancy &amp; interim architectuur</h3>
           <p data-i18n="svc4_p">Direct inzetbaar bij projecten of ter overbrugging. Zonder overhead, snel op stoom.</p>
         </div>
 
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3 data-i18n="svc5_h">Business Continuity Planning</h3>
           <p data-i18n="svc5_p">Analyse en versterking van de continu&iuml;teit van je kritieke bedrijfsprocessen.</p>
-        </div>
-
-        <div class="card reveal reveal-zoom">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 21h20L12 2z"/><line x1="12" y1="9" x2="12" y2="14"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg></div>
-          <h3 data-i18n="svc6_h">Big-tech risicoanalyse</h3>
-          <p data-i18n="svc6_p">Hoe afhankelijk ben je van techbedrijven uit geopolitiek gevoelige regio's? Ik breng het risico in kaart en adviseer over Europese alternatieven.</p>
-          <a href="big-tech-risicoanalyse.html" class="card-link" data-i18n="svc6_link">Meer over deze dienst &rarr;</a>
         </div>
 
       </div>
@@ -156,22 +165,23 @@
   <section>
     <div class="container">
       <div class="section-head reveal">
+        <span class="section-index" aria-hidden="true">03</span>
         <h2 data-i18n="why_h2">Waarom VSDA</h2>
       </div>
       <div class="grid grid-2" data-reveal-group>
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <h3 data-i18n="why1_h">Snel inzetbaar</h3>
           <p data-i18n="why1_p">Geen lange introductietrajecten en geen accountmanagers die eerst moeten schakelen. Je praat direct met de architect die het werk doet.</p>
         </div>
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <h3 data-i18n="why2_h">Strategisch &eacute;n hands-on</h3>
           <p data-i18n="why2_p">Ik adviseer op strategisch niveau, maar heb ook een achtergrond als engineer. Ik kan meewerken aan de uitvoering, niet alleen aan het plaatje.</p>
         </div>
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <h3 data-i18n="why3_h">Geen overhead</h3>
           <p data-i18n="why3_p">Bij een groot bureau weet je pas wie je echt inhuurt als het te laat is. Bij mij weet je dat vooraf.</p>
         </div>
-        <div class="card reveal reveal-zoom">
+        <div class="card card-tech reveal reveal-zoom">
           <h3 data-i18n="why4_h">Duurzaamheid weegt mee</h3>
           <p data-i18n="why4_p">Ik kies opdrachten op inhoud en complexiteit, maar ook op impact. Organisaties die serieus nadenken over hun rol in de wereld hebben mijn voorkeur.</p>
         </div>
@@ -256,7 +266,7 @@ window.VSDA_TRANSLATIONS = {
     "nav_contact": "Contact",
     "nav_cta": "Kennismaken",
     "hero_eyebrow": "IT-architectuur · strategie · continuïteit",
-    "hero_h1": "IT-architectuur die je strategie volgt. Niet andersom.",
+    "hero_h1": "IT-architectuur die je strategie volgt. <span class=\"accent-copper\">Niet andersom.</span>",
     "hero_lead": "Je hebt geen junior nodig die alles nog moet leren. Je hebt iemand nodig die de situatie snel doorgrondt en direct waarde toevoegt. Dat is precies waar ik voor kom.",
     "hero_cta_primary": "Kennismaken",
     "hero_cta_secondary": "Bekijk mijn diensten",
@@ -320,7 +330,7 @@ window.VSDA_TRANSLATIONS = {
     "nav_contact": "Contact",
     "nav_cta": "Get in touch",
     "hero_eyebrow": "IT architecture · strategy · continuity",
-    "hero_h1": "IT architecture that follows your strategy. Not the other way around.",
+    "hero_h1": "IT architecture that follows your strategy. <span class=\"accent-copper\">Not the other way around.</span>",
     "hero_lead": "You don't need a junior who still has to learn everything. You need someone who quickly grasps the situation and adds value right away. That's exactly what I do.",
     "hero_cta_primary": "Get in touch",
     "hero_cta_secondary": "See my services",
